@@ -31,7 +31,8 @@
     .featured-demo>h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:400;margin:12px 0 16px;line-height:1.2}
     .demo-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:26px 0}.demo-steps strong{color:var(--green)}.demo-steps p{margin-top:8px;font-size:.94rem}
     .featured-demo .prompt-label{margin-top:24px}.featured-demo .actions{margin:22px 0;flex-wrap:wrap}.source-list{padding-left:22px;overflow-wrap:anywhere}.source-list li{margin:8px 0}.source-note{font-size:.9rem;color:var(--muted)}.more-demos-title{font-size:1.4rem;margin:0 0 20px}
-    @media(max-width:760px){.featured-demo{padding:22px 18px}.demo-steps{grid-template-columns:1fr;gap:18px}}
+    .demo-stage{margin-top:26px;min-width:0}.demo-stage+.demo-stage{border-top:1px solid var(--line);padding-top:30px;margin-top:32px}.demo-stage h4{font-size:1.15rem;color:var(--green);margin-bottom:14px}.demo-stage .prompt-text{overflow-wrap:anywhere}.demo-privacy{margin:22px 0;padding:18px 20px;background:#fff7df;border-left:4px solid var(--gold);border-radius:0 8px 8px 0;font-size:.94rem}.demo-privacy p{margin-top:7px}.demo-stage .package-guide{margin-top:20px}.demo-stage .demo-context{color:var(--muted)}
+    @media(max-width:760px){.featured-demo{padding:22px 18px}.demo-steps{grid-template-columns:1fr;gap:18px}.demo-stage .prompt-label{align-items:flex-start;gap:12px;flex-wrap:wrap}}
   </style>
 </head>
 <body>
@@ -187,6 +188,49 @@ Can you read through the materials in the folder and draft an anonymous recommen
 
       <div class="demo-follow"><div><strong>Then ask</strong><p>“For each major claim, identify the supporting file and passage. Separate documented achievements from your assessment, and revise anything the materials do not support.”</p></div><div><strong>Check together</strong><p>Are research contributions described accurately? Are team achievements attributed fairly? Does the teaching assessment reflect the actual evaluations? Does the letter avoid inventing an evaluator’s identity or relationship?</p></div></div>
       <p class="tip-strip">Start with file upload and document creation. Homebrew and Anaconda are optional for this exercise. If direct folder access is unavailable, attach the documents; if the older .doc CV cannot be read, provide a PDF or .docx version.</p>
+    </article>
+    <article class="featured-demo" id="demonstration-2" aria-labelledby="blackboard-title">
+      <span class="eyebrow">Demonstration 2 · Browser use → a reusable skill</span>
+      <h3 id="blackboard-title">Grade a homework, then teach Codex the workflow.</h3>
+      <div class="demo-stage" id="blackboard-browser">
+        <h4>Part 1 / Start with a browser task</h4>
+        <div class="prompt-label"><strong>The original browser-use prompt</strong><button type="button" class="copy" data-copy-source="blackboard-browser-prompt">Copy prompt</button></div>
+        <pre class="prompt-text" id="blackboard-browser-prompt">Let's do this first: can you use the browser to go to Blackboard UMBC under my name, and go to the course Physics 623 of Fall 2025? There, you can find the gradebooks and download Homework 1 of all students.</pre>
+        <aside class="demo-privacy" aria-label="Privacy for this demonstration"><strong>Present the workflow without exposing student records.</strong><p>Keep real Blackboard navigation, downloads, and grading private and off the projector. For an audience-facing walkthrough, use a sandbox course with instructor-created fictional submissions, or show only these prompts. Do not upload, publish, or project actual student homework, names, account IDs, grades, or identifiable screenshots—even if a report uses anonymous labels.</p></aside>
+        <details class="package-guide"><summary>Continue the task · work out a solution and grade</summary>
+          <div class="prompt-label"><strong>The follow-up prompt</strong><button type="button" class="copy" data-copy-source="blackboard-grading-prompt">Copy prompt</button></div>
+          <pre class="prompt-text" id="blackboard-grading-prompt">Also, go to Blackboard to download the Homework 1 assignment. Work out the solution and use it to grade the student homework submissions.
+
+To avoid bias, the report should keep the student names anonymous and provide detailed grading criteria and final scores.</pre>
+          <p class="source-note">Anonymous labels protect the report’s presentation, but do not make a review fully blind if the evaluator has already seen identities or existing grades. For blind assessment, anonymize the materials before the grading agent reads them.</p>
+          <div class="prompt-label"><strong>Add these boundaries to the task</strong><button type="button" class="copy" data-copy-source="blackboard-boundaries">Copy instructions</button></div>
+          <pre class="prompt-text" id="blackboard-boundaries">Keep student materials and the identity key local and separate from the public workshop repository. Use neutral IDs in the report and omit identifying filenames and metadata. Set a rubric before evaluating the answers, cite evidence by anonymous ID and page, and show the reason for each deduction. Treat scores as proposed for instructor review. Do not post grades or send feedback in Blackboard. For an audience-facing demonstration, use only instructor-created fictional submissions.</pre>
+        </details>
+        <div class="demo-follow"><div><strong>Watch the collaboration</strong><p>The browser locates the course and assignment. Codex reads the materials, establishes a reference solution and rubric, and prepares a report for the instructor to review.</p></div><div><strong>Check together</strong><p>Is it the correct term, course, and homework? Are all submitted attempts accounted for? Do the solution, units, partial credit, and score totals hold up?</p></div></div>
+      </div>
+      <div class="demo-stage" id="blackboard-skill">
+        <h4>Part 2 / Turn the finished task into a Codex skill</h4>
+        <p class="demo-context">After checking the result together, ask Codex to capture the reusable procedure. A skill stores instructions and supporting resources so a new conversation can follow the workflow without the original chat. It still needs the appropriate browser access and tools.</p>
+        <div class="prompt-label"><strong>Create the skill from the work we just finished</strong><button type="button" class="copy" data-copy-source="blackboard-create-skill">Copy prompt</button></div>
+        <pre class="prompt-text" id="blackboard-create-skill">Use the skill-creator to create a reusable Codex skill called "Blackboard Homework Grading" (blackboard-homework-grading), based on the homework-grading task we just completed together.
+
+Make it flexible for different terms and years, courses and sections, and homework assignments. Ask for any missing details instead of hard-coding this example.
+
+Ask whether I already have a solution or answer key and a grading rubric. If I do, use and check them; if I do not, work out a reference solution and establish a rubric before grading.
+
+Include the browser-download workflow, completeness checks, consistent partial credit, anonymous feedback with page references, and checked final scores for instructor review. Keep Blackboard grades unchanged unless I explicitly authorize posting them.
+
+Save only the reusable instructions and supporting guidance in the skill. Do not include student homework, names, account IDs, grades, credentials, or private course links. Keep any identity key separate from the report and outside the skill. Validate the skill and make it available for future conversations.</pre>
+        <div class="demo-steps" aria-label="Details that change between runs">
+          <div><strong>Term / year</strong><p>For example, Fall 2025 or Spring 2026.</p></div>
+          <div><strong>Course / section</strong><p>For example, PHYS623, with the section confirmed.</p></div>
+          <div><strong>Homework / solution</strong><p>Choose the assignment; supply a key or ask Codex to derive one.</p></div>
+        </div>
+        <div class="prompt-label"><strong>Try it in a new conversation</strong><button type="button" class="copy" data-copy-source="blackboard-reuse-skill">Copy prompt</button></div>
+        <pre class="prompt-text" id="blackboard-reuse-skill">Use $blackboard-homework-grading for UMBC PHYS623, Fall 2025, Homework 1.</pre>
+        <div class="demo-follow"><div><strong>What should happen?</strong><p>The installed skill supplies the workflow. Codex asks for missing details, including whether a solution key or rubric exists, then applies the procedure to the selected assignment.</p></div><div><strong>Inspect the skill together</strong><p>Open its SKILL.md file. Look for flexible inputs, the solution-key question, grading criteria, and privacy boundaries. Confirm that it contains reusable guidance and no student records.</p></div></div>
+        <p class="tip-strip">For the event, adapt the reuse prompt to your sandbox course. The skill is already installed on the presenter’s computer; attendees can use the creation prompt to make their own. <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Read OpenAI’s guide to skills ↗</a></p>
+      </div>
     </article>
     <h3 class="more-demos-title">More examples to explore together</h3>
     <div class="demo-grid">
