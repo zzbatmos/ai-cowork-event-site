@@ -141,6 +141,42 @@
           <div class="tool-links"><a href="https://support.apple.com/en-us/102646" target="_blank" rel="noopener noreferrer">Mac screenshots ↗</a><a href="https://support.apple.com/guide/preview/annotate-an-image-prvw1501/mac" target="_blank" rel="noopener noreferrer">Preview Markup ↗</a><a href="https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots" target="_blank" rel="noopener noreferrer">Windows Snipping Tool ↗</a></div>
         </article>
       </div>
+      <details class="package-guide"><summary>For data work: a small Python starter environment</summary>
+        <p><strong>Suggested packages:</strong> NumPy for arrays, pandas for tables, Matplotlib for plots, SciPy for scientific routines, and openpyxl for Excel files. JupyterLab brings the code and results into a notebook.</p>
+        <p>After setting up Anaconda, run these commands in Anaconda Prompt on Windows or a conda-enabled Terminal on Mac. This creates a separate environment called <code>ai-cowork</code>; use another name if it already exists.</p>
+        <pre><code>conda create --name ai-cowork python jupyterlab numpy pandas matplotlib scipy openpyxl
+conda activate ai-cowork
+jupyter lab</code></pre>
+        <p>When asking an AI assistant to run code locally, tell it which environment to use. Homebrew manages system tools; conda manages this Python environment. <a href="https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html" target="_blank" rel="noopener noreferrer">Conda environment guide ↗</a></p>
+      </details>
+      <h4 class="tool-table-title">Add these when your task calls for them.</h4>
+      <p class="small-note" style="margin-top:0">A short menu for paper reading, reproducible work, and teaching materials. These are optional additions, not an installation checklist.</p>
+      <div class="tools-table-wrap" role="region" aria-label="Additional optional tools; scroll horizontally on small screens" tabindex="0"><table class="tools-table">
+        <thead><tr><th scope="col">Tool</th><th scope="col">When it helps</th><th scope="col">Where to start</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Poppler / PyMuPDF</th><td>Extract text from papers, inspect PDF metadata, and render pages to check equations or figures. Especially useful for repeated or batch document work.</td><td><a href="https://formulae.brew.sh/formula/poppler" target="_blank" rel="noopener noreferrer">Poppler on Mac ↗</a><br><a href="https://pymupdf.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">PyMuPDF for Python ↗</a></td></tr>
+          <tr><th scope="row">A Markdown editor</th><td>Read and edit reusable prompts, project plans, and README files. Typora is one option with a live formatted view; a plain-text editor also works.</td><td><a href="https://typora.io/" target="_blank" rel="noopener noreferrer">Typora (paid, with trial) ↗</a></td></tr>
+          <tr><th scope="row">Git / GitHub</th><td>Keep versions of code, notebooks, and workshop pages. GitHub Desktop offers a visual interface if you prefer it to commands.</td><td><a href="https://github.com/apps/desktop" target="_blank" rel="noopener noreferrer">GitHub Desktop ↗</a></td></tr>
+          <tr><th scope="row">FFmpeg</th><td>Convert audio/video, extract audio from a recording, or assemble animation frames. Transcription needs a separate speech-recognition tool.</td><td><a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer">FFmpeg ↗</a></td></tr>
+          <tr><th scope="row">VPython / Web VPython</th><td>Build interactive 3D physics demonstrations. A useful specialist option for teaching; Web VPython runs in a browser.</td><td><a href="https://vpython.org/" target="_blank" rel="noopener noreferrer">VPython options ↗</a></td></tr>
+        </tbody>
+      </table></div>
+      <p class="tool-choice"><strong>Choose a starting point:</strong> for writing and discussion, use screenshots and an editor; for data, add Python/Jupyter; for many papers, add PDF tools; for media or simulations, add the relevant specialist tools.</p>
+    </div>
+  </div></section>
+
+  <section class="section demos" id="demonstrate" aria-labelledby="demo-title"><div class="wrap">
+    <div class="section-head"><span class="section-num" aria-hidden="true">02</span><div><h2 id="demo-title">Make the conversation useful.</h2><p>Choose two or three examples together. Watch how the result changes when we add context, ask a follow-up, and check the work.</p></div><span class="section-tag">Live demonstrations</span></div>
+    <div class="loop" aria-label="Collaboration process"><div class="loop-item"><b>01 / Frame</b><span>What would a useful result be?</span></div><div class="loop-item"><b>02 / Context</b><span>What does the tool need to know?</span></div><div class="loop-item"><b>03 / Refine</b><span>What should change next?</span></div><div class="loop-item"><b>04 / Verify</b><span>How will you check the result?</span></div></div>
+    <article class="featured-demo" id="demonstration-1" aria-labelledby="recommendation-title">
+      <span class="eyebrow">Demonstration 1 · Read a dossier and draft a letter</span>
+      <h3 id="recommendation-title">From a promotion package to a recommendation letter.</h3>
+      <p class="demo-context">Use Zhibo Zhang’s own promotion materials to see how AI reads several documents, weighs the evidence, and produces an editable Word letter. The evaluator is a role in this exercise; the generated letter is a demonstration draft.</p>
+      <div class="demo-steps">
+        <div><strong>1 / Provide the materials</strong><p>Upload the source documents to ChatGPT, or select the downloaded project folder if local-file access is available. Keep the generated example letter separate from the source materials.</p></div>
+        <div><strong>2 / Give the task</strong><p>Use the prompt below. Specify that the assessment must use only the submitted materials and request a Word file. No online research is needed.</p></div>
+        <div><strong>3 / Read and refine</strong><p>Check the draft against the CV, papers, and evaluations. Ask for corrections before treating it as a finished letter.</p></div>
+      </div>
       <div class="setup-note"><p><strong>Preview: documents are private.</strong> The promotion package and generated example letter are not available for public download yet. You can explore the demonstration and copy the prompts below.</p></div>
       <div class="prompt-label"><strong>Your example prompt</strong><button type="button" class="copy" data-copy-source="recommendation-prompt">Copy prompt</button></div>
       <pre class="prompt-text" id="recommendation-prompt">I am a full professor in a prestigious university. Recently, I received a request for a recommendation letter from UMBC for a faculty member named Zhibo Zhang. I am not a collaborator of this faculty member, and I will evaluate his achievements, research, teaching, and service based on the materials submitted to me.
