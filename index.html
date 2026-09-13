@@ -54,14 +54,29 @@
     /* DEMO 5 STYLE START */
     .weekly-report-content{padding:20px 0;line-height:1.7;overflow-wrap:anywhere}.weekly-report-content h1{font-size:1.8rem;line-height:1.2}.weekly-report-content h2{font-size:1.35rem;margin:32px 0 16px}.weekly-report-content h3{font-size:1.12rem;margin:24px 0 12px}.weekly-report-content table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}.weekly-report-content th,.weekly-report-content td{padding:10px;border-bottom:1px solid var(--line);text-align:left}.weekly-report-content p{margin:12px 0}.weekly-report-content li{margin:10px 0}
     /* DEMO 5 STYLE END */
-  </style>
+  
+/* DEMO NAVIGATION START */
+.demo-toc .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.demo-toc{margin:0 0 30px;padding:24px;border:1px solid #69726a;border-radius:14px;scroll-margin-top:20px}
+.demo-toc h3{margin-bottom:16px;color:var(--gold)}
+.demo-toc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.demo-toc-grid a{display:flex;gap:12px;align-items:flex-start;padding:15px;border:1px solid #69726a;border-radius:8px;text-decoration:none;background:#252d27;color:white}
+.demo-toc-grid a:hover{background:#364537;border-color:var(--gold)}
+.demo-toc-grid b{display:flex;align-items:center;justify-content:center;flex:0 0 28px;height:28px;border-radius:50%;background:var(--gold);color:var(--ink);font-size:.85rem}
+.demo-toc-grid strong{display:block;font-size:.95rem;line-height:1.4}.demo-toc-grid small{display:block;margin-top:4px;font-size:.78rem;color:#d0d8cf;line-height:1.4}
+.demo-return{display:flex;justify-content:flex-end;margin:0 0 16px}.demo-return a{font-size:.8rem;font-weight:600;color:var(--green);padding:6px 10px;border:1px solid #b7c4b6;border-radius:6px;text-decoration:none}.demo-return a:hover{background:#edf2e9}.demo-return-bottom{margin:24px 0 0}
+@media(max-width:900px){.demo-toc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.demo-toc{padding:18px}.demo-toc-grid{grid-template-columns:1fr}}
+@media print{.demo-toc,.demo-return{display:none!important}}
+/* DEMO NAVIGATION END */
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to workshop content</a>
 <header class="topbar">
   <div class="wrap top-inner">
     <a class="brand" href="#welcome" aria-label="UMBC faculty workshop, welcome"><strong>UMBC</strong><span>Faculty workshop<br>September 24, 2026</span></a>
-    <nav aria-label="Workshop sections"><a href="#prepare">01 · Prepare</a><a href="#demonstrate">02 · Explore</a><a href="#practice">03 · Try it</a><a href="#share">Share back</a></nav>
+    <nav aria-label="Workshop sections"><a href="#prepare">01 · Prepare</a><a href="#demonstrate">02 · Demos</a><a href="#practice">03 · Try it</a><a href="#share">Share back</a></nav>
     <button class="projector" id="projector" type="button" aria-pressed="false">Larger text</button>
   </div>
 </header>
@@ -202,8 +217,12 @@ jupyter lab</code></pre>
 
   <section class="section demos" id="demonstrate" aria-labelledby="demo-title"><div class="wrap">
     <div class="section-head"><span class="section-num" aria-hidden="true">02</span><div><h2 id="demo-title">Make the conversation useful.</h2><p>Choose two or three examples together. Watch how the result changes when we add context, ask a follow-up, and check the work.</p></div><span class="section-tag">Live demonstrations</span></div>
+    <!-- DEMO TOC START -->
+    <div class="demo-toc" id="demonstration-menu" role="navigation" aria-labelledby="demonstration-menu-title"><h3 id="demonstration-menu-title">Jump to a demonstration</h3><div class="demo-toc-grid"><a href="#demonstration-0"><b aria-hidden="true">0</b><span><strong><span class="sr-only">Demonstration 0: </span>Chat vs. coworking</strong><small>Read the faculty handbook</small></span></a><a href="#demonstration-1"><b aria-hidden="true">1</b><span><strong><span class="sr-only">Demonstration 1: </span>Recommendation letter</strong><small>Read a promotion package</small></span></a><a href="#demonstration-2"><b aria-hidden="true">2</b><span><strong><span class="sr-only">Demonstration 2: </span>Blackboard grading</strong><small>Browser control + reusable skill</small></span></a><a href="#demonstration-3"><b aria-hidden="true">3</b><span><strong><span class="sr-only">Demonstration 3: </span>Literature review</strong><small>Research El Niño and verify sources</small></span></a><a href="#demonstration-4"><b aria-hidden="true">4</b><span><strong><span class="sr-only">Demonstration 4: </span>Image generation</strong><small>Create a figure + save to Google Drive</small></span></a><a href="#demonstration-5"><b aria-hidden="true">5</b><span><strong><span class="sr-only">Demonstration 5: </span>Scheduled tasks</strong><small>Weekly dust-research updates</small></span></a></div></div>
+    <!-- DEMO TOC END -->
     <div class="loop" aria-label="Collaboration process"><div class="loop-item"><b>01 / Frame</b><span>What would a useful result be?</span></div><div class="loop-item"><b>02 / Context</b><span>What does the tool need to know?</span></div><div class="loop-item"><b>03 / Refine</b><span>What should change next?</span></div><div class="loop-item"><b>04 / Verify</b><span>How will you check the result?</span></div></div>
     <article class="featured-demo" id="demonstration-0" aria-labelledby="handbook-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 0 · From a chat to a local working folder</span>
       <h3 id="handbook-title">Same question. See what coworking adds.</h3>
       <p class="demo-context">Start with a familiar faculty task: finding the requirements for promotion. Ask the same short question in an ordinary ChatGPT chat and in a local project using Codex or ChatGPT Work.</p>
@@ -236,8 +255,10 @@ jupyter lab</code></pre>
         <p class="source-note">Source-only demonstration using the supplied Chapter 6, labeled <em>UMBC Faculty Handbook: June 2024</em>. No online policy research was used. The handbook PDF remains in the presenter’s local folder; the downloadable answer is a reading aid for that snapshot.</p>
       </div>
       <p class="source-note">Local access depends on the app, selected environment, and enabled permissions; menu labels can vary. See OpenAI’s <a href="https://learn.chatgpt.com/docs/projects" target="_blank" rel="noopener noreferrer">project guide</a> and <a href="https://learn.chatgpt.com/docs/get-started-with-work" target="_blank" rel="noopener noreferrer">ChatGPT Work guide</a>.</p>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <article class="featured-demo" id="demonstration-1" aria-labelledby="recommendation-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 1 · Read a dossier and draft a letter</span>
       <h3 id="recommendation-title">From a promotion package to a recommendation letter.</h3>
       <p class="demo-context">Use Zhibo Zhang’s own promotion materials to see how AI reads several documents, weighs the evidence, and produces an editable Word letter. The evaluator is a role in this exercise; the generated letter is a demonstration draft.</p>
@@ -256,8 +277,10 @@ Can you read through the materials in the folder and draft an anonymous recommen
 
       <div class="demo-follow"><div><strong>Then ask</strong><p>“For each major claim, identify the supporting file and passage. Separate documented achievements from your assessment, and revise anything the materials do not support.”</p></div><div><strong>Check together</strong><p>Are research contributions described accurately? Are team achievements attributed fairly? Does the teaching assessment reflect the actual evaluations? Does the letter avoid inventing an evaluator’s identity or relationship?</p></div></div>
       <p class="tip-strip">Start with file upload and document creation. Homebrew and Anaconda are optional for this exercise. If direct folder access is unavailable, attach the documents; if the older .doc CV cannot be read, provide a PDF or .docx version.</p>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <article class="featured-demo" id="demonstration-2" aria-labelledby="blackboard-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 2 · Browser use → a reusable skill</span>
       <h3 id="blackboard-title">Grade a homework, then teach Codex the workflow.</h3>
       <div class="demo-stage" id="blackboard-browser">
@@ -299,9 +322,11 @@ Save only the reusable instructions and supporting guidance in the skill. Do not
         <div class="demo-follow"><div><strong>What should happen?</strong><p>The installed skill supplies the workflow. Codex asks for missing details, including whether a solution key or rubric exists, then applies the procedure to the selected assignment.</p></div><div><strong>Inspect the skill together</strong><p>Open its SKILL.md file. Look for flexible inputs, the solution-key question, grading criteria, and privacy boundaries. Confirm that it contains reusable guidance and no student records.</p></div></div>
         <p class="tip-strip">For the event, adapt the reuse prompt to your sandbox course. The skill is already installed on the presenter’s computer; attendees can use the creation prompt to make their own. <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Read OpenAI’s guide to skills ↗</a></p>
       </div>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <!-- DEMONSTRATION 3 START -->
     <article class="featured-demo" id="demonstration-3" aria-labelledby="literature-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 3 · Research a topic and check the evidence</span>
       <h3 id="literature-title">From a question to a literature review.</h3>
       <p class="demo-context">Use Codex to trace a topic from an introductory webpage to published research, compare findings, and verify the references. Our example: El Niño and the Northeast, including Washington, DC, and Baltimore.</p>
@@ -526,10 +551,12 @@ Critical literature review • Prepared September 13, 2026</p>
         </details>
         <p class="tip-strip">Live teaching point: a polished review is a starting point for scholarly judgment. Check the evidence behind a claim, not just whether a citation looks convincing. Use the completed review as a backup while a new search runs.</p>
       </div>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <!-- DEMONSTRATION 3 END -->
     <!-- DEMONSTRATION 4 START -->
     <article class="featured-demo" id="demonstration-4" aria-labelledby="imagegen-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 4 · Image generation + Google Drive</span>
       <h3 id="imagegen-title">Turn the review into a visual—and save it to Drive.</h3>
       <p class="demo-context">Continue from <a href="#demonstration-3">the El Niño literature review</a>. Use imagegen to create a one-page synopsis, then let Codex use the Google Drive connection to place the checked image in a chosen folder.</p>
@@ -565,10 +592,12 @@ Find the intended Share folder in my Google Drive. If the destination is ambiguo
         <p class="source-note"><strong>References in the figure:</strong> <a href="https://doi.org/10.1002/2014JD021591" target="_blank" rel="noopener">Ning &amp; Bradley (2014)</a> · <a href="https://doi.org/10.1029/2010GL043830" target="_blank" rel="noopener">Seager et al. (2010)</a> · <a href="https://doi.org/10.1175/JCLI-D-17-0783.1" target="_blank" rel="noopener">Deser et al. (2018)</a>.</p>
         <p class="tip-strip">The reusable pattern: build from evidence → generate a visual → inspect it → save it where you work. The illustration above is available as a backup while a live generation runs.</p>
       </div>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <!-- DEMONSTRATION 4 END -->
     <!-- DEMONSTRATION 5 START -->
     <article class="featured-demo" id="demonstration-5" aria-labelledby="scheduled-title">
+      <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
       <span class="eyebrow">Demonstration 5 · Scheduled research updates</span>
       <h3 id="scheduled-title">Turn a useful prompt into a weekly research habit.</h3>
       <p class="demo-context">Ask Codex to return to a research question on a schedule. This example follows dust aerosol research and posts a checked weekly report in the same conversation.</p>
@@ -725,6 +754,7 @@ Organize the report by research area. For each study, summarize its main finding
         <p class="tip-strip">A schedule makes the workflow repeatable. A dated search window, verified references, and explicit gaps make the result reviewable.</p>
         <p class="source-note">For local project tasks, keep the computer on and the desktop app running with the required files and tools available. Review the first few outputs and refine the prompt. <a href="https://learn.chatgpt.com/docs/automations" target="_blank" rel="noopener">Official scheduling guide</a>.</p>
       </div>
+      <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <!-- DEMONSTRATION 5 END -->
     <h3 class="more-demos-title">More examples to explore together</h3>
