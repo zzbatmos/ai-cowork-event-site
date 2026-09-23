@@ -338,6 +338,24 @@ Ask whether I have a solution key or rubric before grading. Prepare local PDF an
         <div class="demo-follow"><div><strong>What should happen?</strong><p>The newly created skill supplies the procedure. The assistant asks for missing inputs and applies it to the selected folder.</p></div><div><strong>Inspect together</strong><p>Open SKILL.md. Check that the instructions are reusable and that they contain no submission content or expected-score key.</p></div></div>
         <p class="tip-strip">Create and validate this new skill during the demonstration before using the reuse prompt. <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Read OpenAI’s guide to skills ↗</a></p>
       </div>
+      <div class="demo-stage" id="avengers-skill-exercise">
+        <h4>Part 3 / Your turn: Avengers 101</h4>
+        <p class="demo-context">Can the same skill handle a completely different assignment? Start a new conversation and grade <strong>Avengers 101: How to Defeat Dr. Doom</strong>. The homework and each funny submission are just one page.</p>
+        <div class="actions"><a class="button" href="https://drive.google.com/drive/folders/1uZt3e9sYkYmHpEux4gFNvCvZXaL_6lxk" target="_blank" rel="noopener">Open the Avengers homework folder ↗</a></div>
+        <div class="demo-steps" aria-label="Try the reusable grading skill"><div><strong>1 / Start fresh</strong><p>Create and validate the skill in Part 2 first. Open a new conversation so the exercise tests the saved procedure.</p></div><div><strong>2 / Change the inputs</strong><p>Use the new folder, Avengers 101, and Homework 2. This fictional exercise has no academic term.</p></div><div><strong>3 / Inspect the result</strong><p>Check all four submissions and the assignment’s rubric. Reveal the instructor key only after grading.</p></div></div>
+        <details class="package-guide"><summary>Practice materials · 1 assignment + 4 fictional submissions</summary><ul class="source-list"><li>Avengers101_Homework2_Assignment.pdf — includes the grading rubric.</li><li>Shuri_Avengers101_HW2.pdf</li><li>Peter_Quill_Avengers101_HW2.pdf</li><li>Scott_Lang_Avengers101_HW2.pdf</li><li>Drax_Avengers101_HW2.pdf</li></ul><p>No Marvel knowledge or online research is needed. All answers and identities are fictional.</p></details>
+        <div class="prompt-label"><strong>Test the skill on a new homework</strong><button type="button" class="copy" data-copy-source="avengers-skill-prompt">Copy exercise prompt</button></div>
+        <pre class="prompt-text" id="avengers-skill-prompt">Use $google-drive-homework-grading for Avengers 101, Homework 2: How to Defeat Dr. Doom.
+
+Folder: https://drive.google.com/drive/folders/1uZt3e9sYkYmHpEux4gFNvCvZXaL_6lxk
+
+This is an entirely fictional training exercise with no academic term. Confirm that you can read the assignment and all four submissions. The assignment includes the rubric. I am not supplying an answer key; establish a reference approach from the scenario and the rubric before grading. Do not carry over the PHYS623 questions, scoring weights, or answers.
+
+Use only these five PDFs. Grade each submission against the stated criteria, not how funny it is or the character’s reputation. Do not search online or look for the instructor’s expected-score key.
+
+Save a concise PDF report and editable Markdown locally, with criterion-level points, brief explanations of deductions, and checked totals out of 100. Use Submission A–D in the report and save the fictional-name mapping separately. Leave the Drive originals and sharing settings unchanged.</pre>
+        <div class="demo-follow"><div><strong>Did the skill transfer?</strong><p>It should use the new assignment’s five questions and rubric, account for four submissions, and explain every deduction without relying on the earlier physics exercise.</p></div><div><strong>Discuss together</strong><p>Does “we won because I said we won” count as evidence? Can a funny answer still miss a required criterion? Compare the completed report with the separate instructor key.</p></div></div>
+      </div>
       <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
     <!-- DEMONSTRATION 3 START -->
