@@ -1,0 +1,56 @@
+{
+  "P1": {
+    "total": 20,
+    "criteria": {
+      "frequency Jacobian and result": 5,
+      "wavenumber Jacobian and result": 5,
+      "wavelength inverse derivation": 5,
+      "wavenumber inverse derivation": 5
+    }
+  },
+  "P2": {
+    "total": 20,
+    "criteria": {
+      "10 um brightness temperature with unit conversion": 8,
+      "0.7 um radiance": 4,
+      "1000 cm^-1 radiance": 4,
+      "31.4 GHz radiance": 4
+    }
+  },
+  "P3": {
+    "total": 15,
+    "criteria": {
+      "both radar wavelengths and wavenumbers": 6,
+      "650 nm photon energy in eV": 4,
+      "8 to 12 um window endpoints and units": 5
+    }
+  },
+  "P4": {
+    "total": 10,
+    "criteria": {
+      "solar dilution and projected/emitting areas": 4,
+      "effective temperature": 3,
+      "greenhouse explanation": 3
+    }
+  },
+  "P5": {
+    "total": 15,
+    "criteria": {
+      "downward and upward flux": 6,
+      "direct actinic contribution": 3,
+      "reflected actinic contribution": 3,
+      "total actinic flux": 3
+    }
+  },
+  "P6": {
+    "total": 20,
+    "criteria": {
+      "solar/internal heating and six-face emission balance": 4,
+      "two emissivities": 6,
+      "Earth irradiance geometry": 3,
+      "thermal absorptivity equals emissivity": 3,
+      "revised energy balance": 2,
+      "revised temperatures": 2
+    }
+  }
+}

@@ -1,0 +1,5 @@
+I am a full professor in a prestigious university. Recently, I received a request for a recommendation letter from UMBC for a faculty member named Zhibo Zhang. I am not a collaborator of this faculty member, and I will evaluate his achievements, research, teaching, and service based on the materials submitted to me.
+
+Can you read through the materials in the folder and draft an anonymous recommendation letter for Dr. Zhang? Please comment on three areas, research, teaching, and service, giving research the most weight.
+
+Use only the submitted materials; do not search online. Create the letter as a downloadable Word (.docx) file. Do not invent facts, an evaluator’s name or university affiliation, or personal knowledge of Dr. Zhang. If you cannot read a file, tell me which one.

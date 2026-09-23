@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Shuri",
+    "question_scores": [
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "total": 100,
+    "rationale": "All four criteria met in every question."
+  },
+  {
+    "name": "Peter Quill",
+    "question_scores": [
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "total": 75,
+    "rationale": "Missing: Q1 uncertainty; Q2 backup; Q3 headcount; Q4 fallback; Q5 acknowledgment of a mistake. Each omission costs 5."
+  },
+  {
+    "name": "Scott Lang",
+    "question_scores": [
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "total": 50,
+    "rationale": "Q1 lacks uncertainty and a reversible action. Q2 lacks coordination and backup. Q3 lacks accessibility and a headcount. Q4 lacks a safe test and fallback. Q5 lacks a mistake and improvement. Each question earns its first two criteria only."
+  },
+  {
+    "name": "Drax",
+    "question_scores": [
+      10,
+      5,
+      5,
+      5,
+      5
+    ],
+    "total": 30,
+    "rationale": "Q1 earns its first two criteria. Q2 names three heroes but gives no roles, coordination, or backup. Q3 gives only a route. Q4 explains an imaginary mechanism; the lunch fork is not a shield fallback. Q5 states an outcome; repeating it is not evidence. Q2-Q5 earn their first criterion only."
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Tony Stark",
+    "scores": [
+      [
+        5,
+        5,
+        5,
+        5
+      ],
+      [
+        8,
+        4,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        5
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        6,
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        6,
+        3,
+        3,
+        2,
+        2
+      ]
+    ],
+    "notes": [
+      "All four transformations/inverses are derived with consistent spectral conventions.",
+      "All results and spectral-density conversions are correct.",
+      "All conversions and units are correct.",
+      "Correct energy balance, temperature, and greenhouse explanation.",
+      "Correct projected and actinic fluxes.",
+      "Complete solution with explicit geometry and thermal absorptivity assumptions."
+    ],
+    "total": 100
+  },
+  {
+    "name": "Peter Parker",
+    "scores": [
+      [
+        5,
+        5,
+        5,
+        0
+      ],
+      [
+        8,
+        0,
+        4,
+        4
+      ],
+      [
+        6,
+        4,
+        5
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        6,
+        3,
+        3,
+        0
+      ],
+      [
+        4,
+        6,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "notes": [
+      "Wavenumber inverse omitted: -5.",
+      "Optical result is mislabeled per micrometre, a factor of 1e6 error: -4.",
+      "All conversions correct.",
+      "Surface-to-orbit distance does not explain the greenhouse temperature difference: -3.",
+      "Components are correct, but their final sum is wrong: -3. Do not also penalize the reflected component.",
+      "Both emissivities correct; entire Earth-heating extension omitted: -10."
+    ],
+    "total": 75
+  },
+  {
+    "name": "Natasha Romanoff",
+    "scores": [
+      [
+        5,
+        5,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        6,
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "notes": [
+      "Spectral conversions correct; both inverse functions replaced by reciprocals: -10.",
+      "Correct brightness temperature; all three emitted-radiance calculations omitted: -12.",
+      "Radar and photon conversions correct; window reciprocals use inconsistent units: -5.",
+      "Balance and temperature correct; clouds do not create energy and greenhouse mechanism is missing: -3.",
+      "Reflected actinic flux lacks the factor 2: -3; final total consequently wrong: -3 under the separate final-result criterion. Preserve all direct/irradiance credit.",
+      "Correct six-face balance: 4/4. Emissivities: 2/6 for both correct absorbed powers, but neither numerical emissivity is correct; six-face factor lost in substitution. Earth extension: 0/10."
+    ],
+    "total": 50
+  },
+  {
+    "name": "Thor Odinson",
+    "scores": [
+      [
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "notes": [
+      "Frequency conversion correct; wavenumber Jacobian missing and both inverses incorrect: -15.",
+      "Brightness temperature correct; three radiances omitted: -12.",
+      "Radar conversions correct; photon calculation confuses wavelength/frequency and energy units, and window conversion is wrong: -9.",
+      "Correct global energy balance earns 4; temperature unevaluated and explanation incorrect: -6.",
+      "Correct direct actinic flux earns 3; projected fluxes wrong and reflected/total actinic answers omitted: -12.",
+      "Correct initial six-face balance earns 4; remaining work omitted: -16."
+    ],
+    "total": 30
+  }
+]

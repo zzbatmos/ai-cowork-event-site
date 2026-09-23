@@ -1,0 +1,37 @@
+{
+  "brightness_temperature_K": 299.2217516799342,
+  "radiance_07um_per_um": 7.445372773708458e-23,
+  "radiance_1000cm_per_cm_inv": 0.08135519222311954,
+  "radiance_31_4GHz_per_Hz": 8.705899800857432e-17,
+  "Venus_effective_temperature_K": 227.14977454754595,
+  "Earth_IR_W_m2": 177.82096347084283,
+  "satellite_temperature_K": 288.7382394249072,
+  "satellite_temperature_increase_K": 5.588239424907215,
+  "satellite_no_dilution_K": 289.26005876945646,
+  "emissivity_albedo_0.2": 0.5893269156131626,
+  "emissivity_albedo_0.8": 0.2159219192679511,
+  "07um_per_m_rounded_constants": 6.867304654248565e-17,
+  "radar_conversions": {
+    "6000000000.0": {
+      "wavelength_cm": 4.996540966666667,
+      "wavenumber_m_inv": 20.01384571188912
+    },
+    "98000000000.0": {
+      "wavelength_cm": 0.3059106714285714,
+      "wavenumber_m_inv": 326.892813294189
+    }
+  },
+  "photon_650nm_J": 3.05607054945989e-19,
+  "photon_650nm_eV": 1.9074492066646196,
+  "window_wavenumbers_cm_inv": [
+    1250.0,
+    833.3333333333333
+  ],
+  "fluxes_in_units_of_F0": {
+    "downward": 0.5,
+    "upward": 0.15,
+    "actinic_direct": 1.0,
+    "actinic_reflected": 0.3,
+    "actinic_total": 1.3
+  }
+}
