@@ -218,7 +218,7 @@ jupyter lab</code></pre>
   <section class="section demos" id="demonstrate" aria-labelledby="demo-title"><div class="wrap">
     <div class="section-head"><span class="section-num" aria-hidden="true">02</span><div><h2 id="demo-title">Make the conversation useful.</h2><p>Choose two or three examples together. Watch how the result changes when we add context, ask a follow-up, and check the work.</p></div><span class="section-tag">Live demonstrations</span></div>
     <!-- DEMO TOC START -->
-    <div class="demo-toc" id="demonstration-menu" role="navigation" aria-labelledby="demonstration-menu-title"><h3 id="demonstration-menu-title">Jump to a demonstration</h3><div class="demo-toc-grid"><a href="#demonstration-0"><b aria-hidden="true">0</b><span><strong><span class="sr-only">Demonstration 0: </span>Chat vs. coworking</strong><small>Read the faculty handbook</small></span></a><a href="#demonstration-1"><b aria-hidden="true">1</b><span><strong><span class="sr-only">Demonstration 1: </span>Recommendation letter</strong><small>Read a promotion package</small></span></a><a href="#demonstration-2"><b aria-hidden="true">2</b><span><strong><span class="sr-only">Demonstration 2: </span>Blackboard grading</strong><small>Browser control + reusable skill</small></span></a><a href="#demonstration-3"><b aria-hidden="true">3</b><span><strong><span class="sr-only">Demonstration 3: </span>Literature review</strong><small>Research El Niño and verify sources</small></span></a><a href="#demonstration-4"><b aria-hidden="true">4</b><span><strong><span class="sr-only">Demonstration 4: </span>Image generation</strong><small>Create a figure + save to Google Drive</small></span></a><a href="#demonstration-5"><b aria-hidden="true">5</b><span><strong><span class="sr-only">Demonstration 5: </span>Scheduled tasks</strong><small>Weekly dust-research updates</small></span></a></div></div>
+    <div class="demo-toc" id="demonstration-menu" role="navigation" aria-labelledby="demonstration-menu-title"><h3 id="demonstration-menu-title">Jump to a demonstration</h3><div class="demo-toc-grid"><a href="#demonstration-0"><b aria-hidden="true">0</b><span><strong><span class="sr-only">Demonstration 0: </span>Chat vs. coworking</strong><small>Read the faculty handbook</small></span></a><a href="#demonstration-1"><b aria-hidden="true">1</b><span><strong><span class="sr-only">Demonstration 1: </span>Recommendation letter</strong><small>Read a promotion package</small></span></a><a href="#demonstration-2"><b aria-hidden="true">2</b><span><strong><span class="sr-only">Demonstration 2: </span>Fictional homework</strong><small>Google Drive + grading + reusable skill</small></span></a><a href="#demonstration-3"><b aria-hidden="true">3</b><span><strong><span class="sr-only">Demonstration 3: </span>Literature review</strong><small>Research El Niño and verify sources</small></span></a><a href="#demonstration-4"><b aria-hidden="true">4</b><span><strong><span class="sr-only">Demonstration 4: </span>Image generation</strong><small>Create a figure + save to Google Drive</small></span></a><a href="#demonstration-5"><b aria-hidden="true">5</b><span><strong><span class="sr-only">Demonstration 5: </span>Scheduled tasks</strong><small>Weekly dust-research updates</small></span></a></div></div>
     <!-- DEMO TOC END -->
     <div class="loop" aria-label="Collaboration process"><div class="loop-item"><b>01 / Frame</b><span>What would a useful result be?</span></div><div class="loop-item"><b>02 / Context</b><span>What does the tool need to know?</span></div><div class="loop-item"><b>03 / Refine</b><span>What should change next?</span></div><div class="loop-item"><b>04 / Verify</b><span>How will you check the result?</span></div></div>
     <article class="featured-demo" id="demonstration-0" aria-labelledby="handbook-title">
@@ -279,48 +279,64 @@ Can you read through the materials in the folder and draft an anonymous recommen
       <p class="tip-strip">Start with file upload and document creation. Homebrew and Anaconda are optional for this exercise. If direct folder access is unavailable, attach the documents; if the older .doc CV cannot be read, provide a PDF or .docx version.</p>
       <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
-    <article class="featured-demo" id="demonstration-2" aria-labelledby="blackboard-title">
+    <article class="featured-demo" id="demonstration-2" aria-labelledby="drive-homework-title">
       <div class="demo-return"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
-      <span class="eyebrow">Demonstration 2 · Browser use → a reusable skill</span>
-      <h3 id="blackboard-title">Grade a homework, then teach Codex the workflow.</h3>
-      <div class="demo-stage" id="blackboard-browser">
-        <h4>Part 1 / Start with a browser task</h4>
-        <div class="prompt-label"><strong>The original browser-use prompt</strong><button type="button" class="copy" data-copy-source="blackboard-browser-prompt">Copy prompt</button></div>
-        <pre class="prompt-text" id="blackboard-browser-prompt">Let's do this first: can you use the browser to go to Blackboard UMBC under my name, and go to the course Physics 623 of Fall 2025? There, you can find the gradebooks and download Homework 1 of all students.</pre>
-        <aside class="demo-privacy" aria-label="Privacy for this demonstration"><strong>Present the workflow without exposing student records.</strong><p>Keep real Blackboard navigation, downloads, and grading private and off the projector. For an audience-facing walkthrough, use a sandbox course with instructor-created fictional submissions, or show only these prompts. Do not upload, publish, or project actual student homework, names, account IDs, grades, or identifiable screenshots—even if a report uses anonymous labels.</p></aside>
-        <details class="package-guide"><summary>Continue the task · work out a solution and grade</summary>
-          <div class="prompt-label"><strong>The follow-up prompt</strong><button type="button" class="copy" data-copy-source="blackboard-grading-prompt">Copy prompt</button></div>
-          <pre class="prompt-text" id="blackboard-grading-prompt">Also, go to Blackboard to download the Homework 1 assignment. Work out the solution and use it to grade the student homework submissions.
+      <span class="eyebrow">Demonstration 2 · Google Drive → grading → a reusable skill</span>
+      <h3 id="drive-homework-title">Grade fictional homework, then reuse the workflow.</h3>
+      <p class="demo-context">Use a shared Google Drive folder to collect an assignment and four synthetic submissions, prepare a reference solution, and produce a grading report. The Marvel character names and all submitted answers are fictional workshop examples.</p>
+      <aside class="demo-privacy" aria-label="Fictional demonstration materials"><strong>Entirely synthetic submissions.</strong><p>These answers were newly created for the event; they are not renamed or anonymized real student work. Use only this demonstration folder. Keep the instructor’s expected-score key separate until after grading, so it does not influence the assessment.</p></aside>
+      <div class="actions"><a class="button primary" href="https://drive.google.com/drive/folders/18bNN_RPz9m7iOs1xX0UrVCcZjj996IPV" target="_blank" rel="noopener">Open the homework folder ↗</a></div>
+      <details class="package-guide"><summary>What is in the folder? · 5 PDFs</summary>
+        <ul><li><strong>HW1_F2025_assignment.pdf</strong> — the PHYS623 Atmospheric Radiation assignment.</li><li><strong>Tony_Stark_HW1.pdf</strong></li><li><strong>Peter_Parker_HW1.pdf</strong></li><li><strong>Natasha_Romanoff_HW1.pdf</strong></li><li><strong>Thor_Odinson_HW1.pdf</strong></li></ul>
+        <p>The folder contains the assignment and four fictional submissions. The instructor key is held separately. Check access before the event; if attendees cannot open the folder, the presenter can demonstrate from their own connected account.</p>
+      </details>
+      <div class="demo-stage" id="drive-homework-browser">
+        <h4>Part 1 / Collect the files from Google Drive</h4>
+        <p class="demo-context">Start with browser control to make the download steps visible. To demonstrate the Google Drive connection instead, use the alternative prompt below.</p>
+        <div class="prompt-label"><strong>The browser-use prompt</strong><button type="button" class="copy" data-copy-source="drive-homework-browser-prompt">Copy prompt</button></div>
+        <pre class="prompt-text" id="drive-homework-browser-prompt">Use the browser to open this Google Drive folder:
+https://drive.google.com/drive/folders/18bNN_RPz9m7iOs1xX0UrVCcZjj996IPV
 
-To avoid bias, the report should keep the student names anonymous and provide detailed grading criteria and final scores.</pre>
-          <p class="source-note">Anonymous labels protect the report’s presentation, but do not make a review fully blind if the evaluator has already seen identities or existing grades. For blind assessment, anonymize the materials before the grading agent reads them.</p>
-          <div class="prompt-label"><strong>Add these boundaries to the task</strong><button type="button" class="copy" data-copy-source="blackboard-boundaries">Copy instructions</button></div>
-          <pre class="prompt-text" id="blackboard-boundaries">Keep student materials and the identity key local and separate from the public workshop repository. Use neutral IDs in the report and omit identifying filenames and metadata. Set a rubric before evaluating the answers, cite evidence by anonymous ID and page, and show the reason for each deduction. Treat scores as proposed for instructor review. Do not post grades or send feedback in Blackboard. For an audience-facing demonstration, use only instructor-created fictional submissions.</pre>
+It contains the PHYS623 Fall 2025 Homework 1 assignment and four entirely fictional submissions using Marvel character names. Download the assignment and the four submission PDFs to a new local folder named Synthetic Homework Grading. List the files and confirm that there is one assignment and four submissions before grading. Use only this folder’s contents and leave the Drive originals and sharing settings unchanged.</pre>
+        <details class="package-guide"><summary>Alternative · use the Google Drive connection</summary>
+          <div class="prompt-label"><strong>The connected-app prompt</strong><button type="button" class="copy" data-copy-source="drive-homework-connector-prompt">Copy prompt</button></div>
+          <pre class="prompt-text" id="drive-homework-connector-prompt">Use my Google Drive connection to read this folder:
+https://drive.google.com/drive/folders/18bNN_RPz9m7iOs1xX0UrVCcZjj996IPV
+
+Find HW1_F2025_assignment.pdf and the four fictional homework PDFs named Tony_Stark_HW1.pdf, Peter_Parker_HW1.pdf, Natasha_Romanoff_HW1.pdf, and Thor_Odinson_HW1.pdf. Download copies to a new local folder named Synthetic Homework Grading. Confirm that all five PDFs are readable. If a file is inaccessible, identify it before proceeding. Do not change the source files or sharing settings.</pre>
         </details>
-        <div class="demo-follow"><div><strong>Watch the collaboration</strong><p>The browser locates the course and assignment. Codex reads the materials, establishes a reference solution and rubric, and prepares a report for the instructor to review.</p></div><div><strong>Check together</strong><p>Is it the correct term, course, and homework? Are all submitted attempts accounted for? Do the solution, units, partial credit, and score totals hold up?</p></div></div>
+        <details class="package-guide"><summary>Continue · solve the assignment and grade the submissions</summary>
+          <div class="prompt-label"><strong>The grading prompt</strong><button type="button" class="copy" data-copy-source="drive-homework-grading-prompt">Copy prompt</button></div>
+          <pre class="prompt-text" id="drive-homework-grading-prompt">Read HW1_F2025_assignment.pdf and the four fictional submissions we downloaded. First ask whether I have an instructor solution or grading rubric. If I provide them, use and check them. Otherwise, work out and verify a reference solution, state your assumptions, and establish a detailed rubric totaling 100 points before grading.
+
+Use only the supplied files; do not search online. Grade the answers on their evidence, not the Marvel characters’ identities or reputations. Use the same criteria and partial-credit rules for all four submissions. Check equations, units, numerical results, and score totals.
+
+Create a PDF report and editable Markdown version with the reference solution, rubric, detailed deductions, and final proposed scores. Use Submission A–D in the report, cite each submission’s problem and page, and save the fictional-name mapping separately. Flag any ambiguous answers or assumptions for instructor review. Save the outputs locally and leave the Drive source files unchanged. Do not look for or use the instructor’s expected-score key.</pre>
+          <p class="source-note">Names are visible in these input PDFs. Anonymous report labels do not make the assessment blind to names. If demonstrating blind grading, remove the fictional names before the grading assistant reads the work.</p>
+        </details>
+        <div class="demo-follow"><div><strong>Watch the collaboration</strong><p>The assistant locates five files, reads the assignment, checks its solution, sets a rubric, and prepares a report. Open the saved files to make the local work visible.</p></div><div><strong>Check together</strong><p>Are all four submissions included? Are the physics, units, partial credit, and totals correct? Reveal the instructor key afterward; a different rubric can produce different scores.</p></div></div>
       </div>
-      <div class="demo-stage" id="blackboard-skill">
+      <div class="demo-stage" id="drive-homework-skill">
         <h4>Part 2 / Turn the finished task into a Codex skill</h4>
-        <p class="demo-context">After checking the result together, ask Codex to capture the reusable procedure. A skill stores instructions and supporting resources so a new conversation can follow the workflow without the original chat. It still needs the appropriate browser access and tools.</p>
-        <div class="prompt-label"><strong>Create the skill from the work we just finished</strong><button type="button" class="copy" data-copy-source="blackboard-create-skill">Copy prompt</button></div>
-        <pre class="prompt-text" id="blackboard-create-skill">Use the skill-creator to create a reusable Codex skill called "Blackboard Homework Grading" (blackboard-homework-grading), based on the homework-grading task we just completed together.
+        <p class="demo-context">After reviewing the grading report, capture the procedure as a new reusable skill. Keep the folder, course, term, and homework as inputs so the next run can use different fictional materials.</p>
+        <div class="prompt-label"><strong>Create the skill from the work we just finished</strong><button type="button" class="copy" data-copy-source="drive-homework-create-skill">Copy prompt</button></div>
+        <pre class="prompt-text" id="drive-homework-create-skill">Use the skill-creator to create a reusable Codex skill called "Google Drive Homework Grading" (google-drive-homework-grading), based on the fictional-homework task we just completed together.
 
-Make it flexible for different terms and years, courses and sections, and homework assignments. Ask for any missing details instead of hard-coding this example.
+Make the Google Drive folder URL, term/year, course/section, and assignment configurable. Ask for any missing details. Support acquiring the PDFs through browser control or the Google Drive connection, then verify the assignment and submission inventory.
 
-Ask whether I already have a solution or answer key and a grading rubric. If I do, use and check them; if I do not, work out a reference solution and establish a rubric before grading.
+Ask whether an instructor solution and rubric already exist. If supplied, use and check them; otherwise derive and verify a solution and establish a rubric before grading. Include consistent partial credit, anonymous feedback with page references, a separate identity mapping, checked score totals, and PDF/Markdown reports for instructor review.
 
-Include the browser-download workflow, completeness checks, consistent partial credit, anonymous feedback with page references, and checked final scores for instructor review. Keep Blackboard grades unchanged unless I explicitly authorize posting them.
+Use only public or entirely fictional materials for workshop runs. For any future nonpublic institutional data, require confirmation that the specific service and intended use have the appropriate institutional authorization. Keep source files and sharing unchanged; do not upload reports or send feedback unless explicitly requested.
 
-Save only the reusable instructions and supporting guidance in the skill. Do not include student homework, names, account IDs, grades, credentials, or private course links. Keep any identity key separate from the report and outside the skill. Validate the skill and make it available for future conversations.</pre>
-        <div class="demo-steps" aria-label="Details that change between runs">
-          <div><strong>Term / year</strong><p>For example, Fall 2025 or Spring 2026.</p></div>
-          <div><strong>Course / section</strong><p>For example, PHYS623, with the section confirmed.</p></div>
-          <div><strong>Homework / solution</strong><p>Choose the assignment; supply a key or ask Codex to derive one.</p></div>
-        </div>
-        <div class="prompt-label"><strong>Try it in a new conversation</strong><button type="button" class="copy" data-copy-source="blackboard-reuse-skill">Copy prompt</button></div>
-        <pre class="prompt-text" id="blackboard-reuse-skill">Use $blackboard-homework-grading for UMBC PHYS623, Fall 2025, Homework 1.</pre>
-        <div class="demo-follow"><div><strong>What should happen?</strong><p>The installed skill supplies the workflow. Codex asks for missing details, including whether a solution key or rubric exists, then applies the procedure to the selected assignment.</p></div><div><strong>Inspect the skill together</strong><p>Open its SKILL.md file. Look for flexible inputs, the solution-key question, grading criteria, and privacy boundaries. Confirm that it contains reusable guidance and no student records.</p></div></div>
-        <p class="tip-strip">For the event, adapt the reuse prompt to your sandbox course. The skill is already installed on the presenter’s computer; attendees can use the creation prompt to make their own. <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Read OpenAI’s guide to skills ↗</a></p>
+Save reusable instructions and supporting guidance only. Do not embed homework answers, names, expected grades, account details, this folder URL, or run-specific files in the skill. Validate the skill and make it available for future conversations.</pre>
+        <div class="demo-steps" aria-label="Details that change between runs"><div><strong>Drive folder</strong><p>Supply the folder URL and confirm the expected files.</p></div><div><strong>Course / term / homework</strong><p>Identify the assignment and verify its version.</p></div><div><strong>Solution / rubric</strong><p>Provide an existing key or ask for a checked reference solution.</p></div></div>
+        <div class="prompt-label"><strong>After creating the skill · try a new conversation</strong><button type="button" class="copy" data-copy-source="drive-homework-reuse-skill">Copy prompt</button></div>
+        <pre class="prompt-text" id="drive-homework-reuse-skill">Use $google-drive-homework-grading for the fictional PHYS623 Fall 2025 Homework 1 submissions in:
+https://drive.google.com/drive/folders/18bNN_RPz9m7iOs1xX0UrVCcZjj996IPV
+
+Ask whether I have a solution key or rubric before grading. Prepare local PDF and Markdown reports with anonymous labels and a separate fictional-name mapping.</pre>
+        <div class="demo-follow"><div><strong>What should happen?</strong><p>The newly created skill supplies the procedure. The assistant asks for missing inputs and applies it to the selected folder.</p></div><div><strong>Inspect together</strong><p>Open SKILL.md. Check that the instructions are reusable and that they contain no submission content or expected-score key.</p></div></div>
+        <p class="tip-strip">Create and validate this new skill during the demonstration before using the reuse prompt. <a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Read OpenAI’s guide to skills ↗</a></p>
       </div>
       <div class="demo-return demo-return-bottom"><a href="#demonstration-menu">↑ Back to demonstrations</a></div>
     </article>
